@@ -1,0 +1,587 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../public/assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../public/assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../public/assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../public/assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../public/assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../public/assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../public/assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../public/assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../public/assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../public/assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../public/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../public/assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../public/assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../public/assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="../public/assets/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Styles -->
+    <link href="../src/css/styles.css" rel="stylesheet" />
+    <title>Plago - Travel Planner</title>
+  </head>
+  <body>
+    <div class="flex w-screen h-screen">
+      <!-- Left Column -->
+      <div class="h-full flex flex-col border-r border-r-gray-200">
+        <!-- Header -->
+        <div
+          class="h-[60px] flex-shrink-0 w-auto bg-white border-b border-b-gray-200 flex items-center px-6"
+        >
+          <!-- Logo -->
+          <div class="">
+            <img class="h-7 w-auto" src="./assets/logo/plago-logo-full.svg" alt="" />
+          </div>
+        </div>
+
+        <!-- Row -->
+        <div class="flex h-full">
+          <!-- Navigation Bar -->
+          <div
+            class="h-full flex-shrink-0 flex flex-col items-center justify-between w-20 bg-red-200 border-r
+              border-r-gray-200 py-4 px-1.5"
+          >
+            <!-- Nav-List -->
+            <div class="flex-grow flex flex-col gap-1 w-full">
+              <!-- Nav-Item: Discover -->
+              <a
+                href="!#"
+                class="flex flex-col items-center justify-center w-full h-auto gap-0.5 bg-white py-2.5 rounded-lg
+                  cursor-pointer hover:bg-gray-100 transition-colors duration-200"
+              >
+                <img class="w-auto" src="./assets/icons/file.svg" alt="" />
+                <h2 class="w-auto text-xs font-medium hover:">Discover</h2>
+              </a>
+              <!-- Nav-Item: Trips -->
+              <a
+                href="!#"
+                class="flex flex-col items-center justify-center w-full h-auto gap-0.5 bg-gray-100 py-2.5 rounded-lg
+                  cursor-pointer hover:bg-gray-100 transition-colors duration-200"
+              >
+                <img class="w-auto" src="./assets/icons/file.svg" alt="" />
+                <h2 class="w-auto text-xs font-medium">Trips</h2>
+              </a>
+              <!-- Nav-Item: Collection -->
+              <a
+                href="!#"
+                class="flex flex-col items-center justify-center w-full h-auto gap-0.5 bg-white py-2.5 rounded-lg
+                  cursor-pointer hover:bg-gray-100 transition-colors duration-200"
+              >
+                <img class="w-auto" src="./assets/icons/bookmark.svg" alt="" />
+                <h2 class="w-auto text-xs font-medium">Collection</h2>
+              </a>
+              <!-- Nav-Item: Tools -->
+              <a
+                href="!#"
+                class="flex flex-col items-center justify-center w-full h-auto gap-0.5 bg-white py-2.5 rounded-lg
+                  cursor-pointer hover:bg-gray-100 transition-colors duration-200"
+              >
+                <img class="w-auto" src="./assets/icons/zap.svg" alt="" />
+                <h2 class="w-auto text-xs font-medium">Tools</h2>
+              </a>
+            </div>
+            <!-- Avatar -->
+            <div class="">
+              <img class="w-10 h-10" src="./assets/img/avatar.png" alt="" />
+            </div>
+          </div>
+
+          <!-- AI Chat -->
+          <div
+            class="h-full flex-shrink-0 flex flex-col w-[350px] bg-green-200 border-r border-r-gray-200"
+          >
+            <!-- AI-Header -->
+            <div
+              class="flex items-center h-14 bg-transparent gap-1.5 px-4 border-b border-b-gray-200"
+            >
+              <img src="./assets/img/ai-star.svg" alt="" class="" />
+              <h3 class="text-base font-medium">Plago AI</h3>
+            </div>
+            <!-- AI-Content -->
+            <div class="flex-grow overflow-y-auto bg-transparent px-4 pt-4 text-sm text-gray-700">
+              Hello there! As your "Travel Expert", I'm here to help you plan your perfect trip.
+              Think of me as your personal travel planner and ask me anything 😉
+            </div>
+            <!-- AI-Input Area -->
+            <div class="flex-shrink-0 h-[60px] bg-transparent sticky bottom-0">
+              <p class="text-gray-500 py-4 px-6 border-t border-t-gray-200 text-sm">
+                Ask Plato anything...
+              </p>
+            </div>
+          </div>
+
+          <!-- Main -->
+          <div class="h-full w-auto min-w-[650px] flex flex-col bg-white px-6 pt-6">
+            <!-- Main - Header -->
+            <div class="h-auto flex-shrink-0 flex items-start gap-4 mb-6">
+              <!-- Header Left -->
+              <div class="w-auto flex-grow">
+                <button class="btn btn-tertiary px-0">
+                  <img src="./assets/icons/arrow-left.svg" alt="" class="" /> Back
+                </button>
+                <h1 class="font-medium text-gray-800 text-2xl mb-1.5">Tokyo Summer 2025</h1>
+                <!-- Sub Info -->
+                <div class="flex items-center gap-4">
+                  <!-- Country -->
+                  <div class="flex items-center gap-1.5">
+                    <img src="./assets/img/JP.svg" alt="" class="" />
+                    <p class="text-sm">Japan</p>
+                  </div>
+                  <!-- Schedule -->
+                  <div class="flex items-center gap-1.5">
+                    <img src="./assets/icons/calendar.svg" alt="" class="" />
+                    <p class="text-sm">3 May → 6 May, 2025</p>
+                    <p class="text-sm text-gray-500">(4 days)</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Header Right -->
+              <button class="btn btn--icon">
+                <img src="./assets/icons/setting.svg" alt="" class="" />
+              </button>
+            </div>
+            <!-- Main - Tab -->
+            <div class="h-auto flex-shrink-0 border-b border-gray-200">
+              <nav class="-mb-px flex space-x-6" aria-label="Tabs">
+                <a
+                  href="!#"
+                  class="whitespace-nowrap border-b-2 border-black px-1 py-2 text-sm font-semibold text-gray-900"
+                  aria-current="page"
+                >
+                  Itinerary
+                </a>
+
+                <a
+                  href="!#"
+                  class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-sm font-medium text-gray-500
+                    hover:border-gray-300 hover:text-gray-700"
+                >
+                  Saved
+                </a>
+
+                <a
+                  href="!#"
+                  class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-sm font-medium text-gray-500
+                    hover:border-gray-300 hover:text-gray-700"
+                >
+                  Files
+                </a>
+
+                <a
+                  href="!#"
+                  class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-sm font-medium text-gray-500
+                    hover:border-gray-300 hover:text-gray-700"
+                >
+                  Notes
+                </a>
+              </nav>
+            </div>
+            <!-- Main - Itinerary -->
+            <div class="h-full flex-shrink-0 flex flex-col bg-amber-200">
+              <!-- Calendar -->
+              <div class="h-auto pt-3 pb-1.5 flex items-center gap-2">
+                <!-- Day 1 -->
+                <div
+                  class="cursor-pointer flex flex-col items-center justify-center h-12 w-12 bg-blue-50 border border-blue-200
+                    rounded-md"
+                >
+                  <p class="text-sm font-medium text-blue-400">THU</p>
+                  <p class="text-base font-semibold text-blue-500 mt-[-4px]">3</p>
+                </div>
+                <!-- Day 2 -->
+                <div
+                  class="cursor-pointer flex flex-col items-center justify-center h-12 w-12 bg-white border border-gray-200
+                    rounded-md hover:bg-gray-100 transition-colors duration-200"
+                >
+                  <p class="text-sm font-medium text-gray-400">FRI</p>
+                  <p class="text-base font-semibold text-gray-500 mt-[-4px]">4</p>
+                </div>
+                <!-- Day 3 -->
+                <div
+                  class="cursor-pointer flex flex-col items-center justify-center h-12 w-12 bg-white border border-gray-200
+                    rounded-md hover:bg-gray-100 transition-colors duration-200"
+                >
+                  <p class="text-sm font-medium text-gray-400">SAT</p>
+                  <p class="text-base font-semibold text-gray-500 mt-[-4px]">5</p>
+                </div>
+                <!-- Day 4 -->
+                <div
+                  class="cursor-pointer flex flex-col items-center justify-center h-12 w-12 bg-white border border-gray-200
+                    rounded-md hover:bg-gray-100 transition-colors duration-200"
+                >
+                  <p class="text-sm font-medium text-gray-400">SUN</p>
+                  <p class="text-base font-semibold text-gray-500 mt-[-4px]">6</p>
+                </div>
+              </div>
+              <!-- Itinerary - Details -->
+              <div
+                class="bg-blue-200 h-full overflow-y-auto relative z-0 py-4 flex flex-col space-y-8"
+              >
+                <!-- Itinerary Line -->
+                <div class="absolute top-4 bottom-4 z-[-1] ml-[19px] w-[1px] bg-outline"></div>
+                <!-- Day 1 -->
+                <div class="">
+                  <!-- Day - Header -->
+                  <div class="bg-gray-100 pt-1 pb-[6px] px-4 rounded-lg border border-gray-100">
+                    <h4 class="font-semibold">Day 1</h4>
+                    <p class="text-text-second">Thu, 3 May</p>
+                  </div>
+                  <!-- Day Details -->
+                  <!-- Place List -->
+                  <div class="flex flex-col mt-4 gap-7">
+                    <!-- Place 1 -->
+                    <div class="flex items-center gap-3">
+                      <!-- Place Type Icon -->
+                      <div
+                        class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
+                      >
+                        <img src="./assets/icons/place-type__lodging.svg" alt="" class="" />
+                      </div>
+                      <!-- Place Card Info -->
+                      <div
+                        class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
+                      >
+                        <!-- Order -->
+                        <p
+                          class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
+                            text-center"
+                        >
+                          1
+                        </p>
+                        <!-- Thumb -->
+                        <div class="w-11 h-11 rounded-lg overflow-hidden">
+                          <img
+                            src="./assets/img/place__nippon-seinenkan-hotel.png"
+                            alt=""
+                            class=""
+                          />
+                        </div>
+                        <!-- Content -->
+                        <div class="flex-grow min-w-0">
+                          <!-- Place Title -->
+                          <h4 class="">Nippon Seinenkan Hotel</h4>
+                          <!-- Place Address -->
+                          <p class="text-text-second truncate">
+                            4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
+                          </p>
+                        </div>
+                        <button class="btn btn-tertiary">
+                          <img src="./assets/icons/chevron-right.svg" alt="" class="" />
+                        </button>
+                      </div>
+                    </div>
+                    <!-- Place 2 -->
+                    <div class="flex items-center gap-3">
+                      <!-- Place Type Icon -->
+                      <div
+                        class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
+                      >
+                        <img src="./assets/icons/place-type__lodging.svg" alt="" class="" />
+                      </div>
+                      <!-- Place Card Info -->
+                      <div
+                        class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
+                      >
+                        <!-- Order -->
+                        <p
+                          class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
+                            text-center"
+                        >
+                          1
+                        </p>
+                        <!-- Thumb -->
+                        <div class="w-11 h-11 rounded-lg overflow-hidden">
+                          <img
+                            src="./assets/img/place__nippon-seinenkan-hotel.png"
+                            alt=""
+                            class=""
+                          />
+                        </div>
+                        <!-- Content -->
+                        <div class="flex-grow min-w-0">
+                          <!-- Place Title -->
+                          <h4 class="">Nippon Seinenkan Hotel</h4>
+                          <!-- Place Address -->
+                          <p class="text-text-second truncate">
+                            4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
+                          </p>
+                        </div>
+                        <button class="btn btn-tertiary">
+                          <img src="./assets/icons/chevron-right.svg" alt="" class="" />
+                        </button>
+                      </div>
+                    </div>
+                    <!-- Place 3 -->
+                    <div class="flex items-center gap-3">
+                      <!-- Place Type Icon -->
+                      <div
+                        class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
+                      >
+                        <img src="./assets/icons/place-type__lodging.svg" alt="" class="" />
+                      </div>
+                      <!-- Place Card Info -->
+                      <div
+                        class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
+                      >
+                        <!-- Order -->
+                        <p
+                          class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
+                            text-center"
+                        >
+                          1
+                        </p>
+                        <!-- Thumb -->
+                        <div class="w-11 h-11 rounded-lg overflow-hidden">
+                          <img
+                            src="./assets/img/place__nippon-seinenkan-hotel.png"
+                            alt=""
+                            class=""
+                          />
+                        </div>
+                        <!-- Content -->
+                        <div class="flex-grow min-w-0">
+                          <!-- Place Title -->
+                          <h4 class="">Nippon Seinenkan Hotel</h4>
+                          <!-- Place Address -->
+                          <p class="text-text-second truncate">
+                            4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
+                          </p>
+                        </div>
+                        <button class="btn btn-tertiary">
+                          <img src="./assets/icons/chevron-right.svg" alt="" class="" />
+                        </button>
+                      </div>
+                    </div>
+                    <!-- Place 4 -->
+                    <div class="flex items-center gap-3">
+                      <!-- Place Type Icon -->
+                      <div
+                        class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
+                      >
+                        <img src="./assets/icons/place-type__lodging.svg" alt="" class="" />
+                      </div>
+                      <!-- Place Card Info -->
+                      <div
+                        class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
+                      >
+                        <!-- Order -->
+                        <p
+                          class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
+                            text-center"
+                        >
+                          1
+                        </p>
+                        <!-- Thumb -->
+                        <div class="w-11 h-11 rounded-lg overflow-hidden">
+                          <img
+                            src="./assets/img/place__nippon-seinenkan-hotel.png"
+                            alt=""
+                            class=""
+                          />
+                        </div>
+                        <!-- Content -->
+                        <div class="flex-grow min-w-0">
+                          <!-- Place Title -->
+                          <h4 class="">Nippon Seinenkan Hotel</h4>
+                          <!-- Place Address -->
+                          <p class="text-text-second truncate">
+                            4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
+                          </p>
+                        </div>
+                        <button class="btn btn-tertiary">
+                          <img src="./assets/icons/chevron-right.svg" alt="" class="" />
+                        </button>
+                      </div>
+                    </div>
+                    <!-- Place 5 -->
+                    <div class="flex items-center gap-3">
+                      <!-- Place Type Icon -->
+                      <div
+                        class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
+                      >
+                        <img src="./assets/icons/place-type__lodging.svg" alt="" class="" />
+                      </div>
+                      <!-- Place Card Info -->
+                      <div
+                        class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
+                      >
+                        <!-- Order -->
+                        <p
+                          class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
+                            text-center"
+                        >
+                          1
+                        </p>
+                        <!-- Thumb -->
+                        <div class="w-11 h-11 rounded-lg overflow-hidden">
+                          <img
+                            src="./assets/img/place__nippon-seinenkan-hotel.png"
+                            alt=""
+                            class=""
+                          />
+                        </div>
+                        <!-- Content -->
+                        <div class="flex-grow min-w-0">
+                          <!-- Place Title -->
+                          <h4 class="">Nippon Seinenkan Hotel</h4>
+                          <!-- Place Address -->
+                          <p class="text-text-second truncate">
+                            4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
+                          </p>
+                        </div>
+                        <button class="btn btn-tertiary">
+                          <img src="./assets/icons/chevron-right.svg" alt="" class="" />
+                        </button>
+                      </div>
+                    </div>
+                    <!-- Place 6 -->
+                    <div class="flex items-center gap-3">
+                      <!-- Place Type Icon -->
+                      <div
+                        class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
+                      >
+                        <img src="./assets/icons/place-type__lodging.svg" alt="" class="" />
+                      </div>
+                      <!-- Place Card Info -->
+                      <div
+                        class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
+                      >
+                        <!-- Order -->
+                        <p
+                          class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
+                            text-center"
+                        >
+                          1
+                        </p>
+                        <!-- Thumb -->
+                        <div class="w-11 h-11 rounded-lg overflow-hidden">
+                          <img
+                            src="./assets/img/place__nippon-seinenkan-hotel.png"
+                            alt=""
+                            class=""
+                          />
+                        </div>
+                        <!-- Content -->
+                        <div class="flex-grow min-w-0">
+                          <!-- Place Title -->
+                          <h4 class="">Nippon Seinenkan Hotel</h4>
+                          <!-- Place Address -->
+                          <p class="text-text-second truncate">
+                            4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
+                          </p>
+                        </div>
+                        <button class="btn btn-tertiary">
+                          <img src="./assets/icons/chevron-right.svg" alt="" class="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn mt-4">
+                    <img src="./assets/icons/plus.svg" alt="" class="" />
+                    Add Place
+                  </button>
+                </div>
+                <!-- Day 2 -->
+                <div class="">
+                  <!-- Day - Header -->
+                  <div class="bg-gray-100 pt-1 pb-[6px] px-4 rounded-lg border border-gray-100">
+                    <h4 class="font-semibold">Day 2</h4>
+                    <p class="text-text-second">Fri, 4 May</p>
+                  </div>
+                  <!-- Day- Details -->
+                  <button class="btn mt-4">
+                    <img src="./assets/icons/plus.svg" alt="" class="" />
+                    Add Place
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column (Maps) -->
+      <div class="flex flex-grow h-full">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1663022.5479797728!2d138.44791031936322!3d35.50203014303424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2s!4v1745514876762!5m2!1sen!2s"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>

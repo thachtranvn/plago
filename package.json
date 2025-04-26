@@ -1,0 +1,27 @@
+{
+  "name": "project---sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/css/tailwind.css -o ./src/css/styles.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "prettier-plugin-classnames": "^0.7.7",
+    "prettier-plugin-tailwindcss": "^0.6.11"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "plugins": [
+      "prettier-plugin-classnames"
+    ]
+  }
+}

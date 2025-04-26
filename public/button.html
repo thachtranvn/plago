@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../src/css/styles.css" rel="stylesheet" />
+    <title>Button Test</title>
+  </head>
+  <body class="flex flex-col gap-[12px] p-[30px]">
+    <div class="pb-4 mb-3 border-b border-b-outline">
+      <h1 class="">Buttons</h1>
+    </div>
+    <div class="flex space-x-16">
+      <!-- Normal Size -->
+      <div class="flex flex-col gap-[12px]">
+        <div class="btn btn-primary">Primary</div>
+        <div class="btn">Secondary</div>
+        <div class="btn btn-tertiary">Tertiary</div>
+        <div class="btn">
+          <img src="./assets/icons/calendar.svg" alt="" class="" />
+          Leading
+        </div>
+        <div class="btn">
+          Trailing
+          <img src="./assets/icons/calendar.svg" alt="" class="" />
+        </div>
+        <div class="btn btn-primary--danger">Danger Primary</div>
+        <div class="btn btn--danger">Danger Secondary</div>
+        <div class="btn btn-tertiary--danger">Danger Tertiary</div>
+        <div class="btn btn-link">Link</div>
+        <div class="btn btn-link--danger">Danger Link</div>
+      </div>
+
+      <!-- Disabled -->
+      <div class="flex flex-col gap-[12px]">
+        <div class="btn btn-primary--disabled">Primary</div>
+        <div class="btn btn--disabled">Secondary</div>
+        <div class="btn btn-tertiary--disabled">Tertiary</div>
+      </div>
+
+      <!-- Large Size -->
+      <div class="flex flex-col gap-[12px]">
+        <div class="btn btn-primary btn-lg">Primary</div>
+        <div class="btn btn-lg">Secondary</div>
+        <div class="btn btn-tertiary btn-lg">Tertiary</div>
+        <div class="btn btn-lg">
+          <img src="./assets/icons/calendar.svg" alt="" class="" />
+          Leading
+        </div>
+        <div class="btn btn-lg">
+          Trailing
+          <img src="./assets/icons/calendar.svg" alt="" class="" />
+        </div>
+        <div class="btn btn-primary--danger btn-lg">Danger Primary</div>
+        <div class="btn btn--danger btn-lg">Danger Secondary</div>
+        <div class="btn btn-tertiary--danger btn-lg">Danger Tertiary</div>
+      </div>
+      <!-- Small Size -->
+      <div class="flex flex-col gap-[12px]">
+        <div class="btn btn-primary btn-sm">Primary</div>
+        <div class="btn btn-sm">Secondary</div>
+        <div class="btn btn-tertiary btn-sm">Tertiary</div>
+        <div class="btn btn-sm">
+          <img src="./assets/icons/calendar.svg" alt="" class="" />
+          Leading
+        </div>
+        <div class="btn btn-sm">
+          Trailing
+          <img src="./assets/icons/calendar.svg" alt="" class="" />
+        </div>
+        <div class="btn btn-primary--danger btn-sm">Danger Primary</div>
+        <div class="btn btn--danger btn-sm">Danger Secondary</div>
+        <div class="btn btn-tertiary--danger btn-sm">Danger Tertiary</div>
+      </div>
+    </div>
+  </body>
+</html>
