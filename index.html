@@ -105,19 +105,19 @@
         </div>
 
         <!-- Row -->
-        <div class="flex h-full">
+        <div class="flex flex-grow min-h-0">
           <!-- Navigation Bar -->
           <div
-            class="h-full flex-shrink-0 flex flex-col items-center justify-between w-20 bg-red-200 border-r
-              border-r-gray-200 py-4 px-1.5"
+            class="flex flex-col flex-shrink-0 items-center justify-between w-20 bg-white border-r border-r-gray-200
+              py-4 px-1.5"
           >
             <!-- Nav-List -->
             <div class="flex-grow flex flex-col gap-1 w-full">
               <!-- Nav-Item: Discover -->
               <a
                 href="!#"
-                class="flex flex-col items-center justify-center w-full h-auto gap-0.5 bg-white py-2.5 rounded-lg
-                  cursor-pointer hover:bg-gray-100 transition-colors duration-200"
+                class="flex flex-col items-center justify-center w-full gap-0.5 bg-white py-2.5 rounded-lg cursor-pointer
+                  hover:bg-gray-100 transition-colors duration-200"
               >
                 <img class="w-auto" src="./public/assets/icons/file.svg" alt="" />
                 <h2 class="w-auto text-xs font-medium hover:">Discover</h2>
@@ -125,7 +125,7 @@
               <!-- Nav-Item: Trips -->
               <a
                 href="!#"
-                class="flex flex-col items-center justify-center w-full h-auto gap-0.5 bg-gray-100 py-2.5 rounded-lg
+                class="flex flex-col items-center justify-center w-full gap-0.5 bg-gray-100 py-2.5 rounded-lg
                   cursor-pointer hover:bg-gray-100 transition-colors duration-200"
               >
                 <img class="w-auto" src="./public/assets/icons/file.svg" alt="" />
@@ -134,8 +134,8 @@
               <!-- Nav-Item: Collection -->
               <a
                 href="!#"
-                class="flex flex-col items-center justify-center w-full h-auto gap-0.5 bg-white py-2.5 rounded-lg
-                  cursor-pointer hover:bg-gray-100 transition-colors duration-200"
+                class="flex flex-col items-center justify-center w-full gap-0.5 bg-white py-2.5 rounded-lg cursor-pointer
+                  hover:bg-gray-100 transition-colors duration-200"
               >
                 <img class="w-auto" src="./public/assets/icons/bookmark.svg" alt="" />
                 <h2 class="w-auto text-xs font-medium">Collection</h2>
@@ -143,8 +143,8 @@
               <!-- Nav-Item: Tools -->
               <a
                 href="!#"
-                class="flex flex-col items-center justify-center w-full h-auto gap-0.5 bg-white py-2.5 rounded-lg
-                  cursor-pointer hover:bg-gray-100 transition-colors duration-200"
+                class="flex flex-col items-center justify-center w-full gap-0.5 bg-white py-2.5 rounded-lg cursor-pointer
+                  hover:bg-gray-100 transition-colors duration-200"
               >
                 <img class="w-auto" src="./public/assets/icons/zap.svg" alt="" />
                 <h2 class="w-auto text-xs font-medium">Tools</h2>
@@ -157,23 +157,21 @@
           </div>
 
           <!-- AI Chat -->
-          <div
-            class="h-full flex-shrink-0 flex flex-col w-[350px] bg-green-200 border-r border-r-gray-200"
-          >
+          <div class="flex-grow flex flex-col w-[350px] border-r border-r-gray-200">
             <!-- AI-Header -->
             <div
-              class="flex items-center h-14 bg-transparent gap-1.5 px-4 border-b border-b-gray-200"
+              class="flex flex-shrink-0 items-center h-14 bg-white gap-1.5 px-4 border-b border-b-gray-200"
             >
               <img src="./public/assets/img/ai-star.svg" alt="" class="" />
               <h3 class="text-base font-medium">Plago AI</h3>
             </div>
             <!-- AI-Content -->
-            <div class="flex-grow overflow-y-auto bg-transparent px-4 pt-4 text-sm text-gray-700">
+            <div class="flex-grow overflow-y-auto bg-gray-50 p-4 text-sm text-gray-700">
               Hello there! As your "Travel Expert", I'm here to help you plan your perfect trip.
               Think of me as your personal travel planner and ask me anything 😉
             </div>
             <!-- AI-Input Area -->
-            <div class="flex-shrink-0 h-[60px] bg-transparent sticky bottom-0">
+            <div class="flex-shrink-0 h-[60px] bg-white sticky bottom-0">
               <p class="text-gray-500 py-4 px-6 border-t border-t-gray-200 text-sm">
                 Ask Plato anything...
               </p>
@@ -181,9 +179,9 @@
           </div>
 
           <!-- Main -->
-          <div class="h-full w-auto min-w-[650px] flex flex-col bg-white px-6 pt-6">
+          <div class="min-w-0 max-w-[700px] flex flex-col flex-grow bg-white px-6 pt-6">
             <!-- Main - Header -->
-            <div class="h-auto flex-shrink-0 flex items-start gap-4 mb-6">
+            <div class="flex items-start gap-4 mb-6">
               <!-- Header Left -->
               <div class="w-auto flex-grow">
                 <button class="btn btn-tertiary px-0">
@@ -211,7 +209,7 @@
               </button>
             </div>
             <!-- Main - Tab -->
-            <div class="h-auto flex-shrink-0 border-b border-gray-200">
+            <div class="flex-shrink-0 border-b border-gray-200">
               <nav class="-mb-px flex space-x-6" aria-label="Tabs">
                 <a
                   href="!#"
@@ -247,9 +245,9 @@
               </nav>
             </div>
             <!-- Main - Itinerary -->
-            <div class="h-full flex-shrink-0 flex flex-col bg-amber-200">
+            <div class="flex flex-col min-h-0 bg-white">
               <!-- Calendar -->
-              <div class="h-auto pt-3 pb-1.5 flex items-center gap-2">
+              <div class="pt-3 pb-1.5 flex items-center gap-2">
                 <!-- Day 1 -->
                 <div
                   class="cursor-pointer flex flex-col items-center justify-center h-12 w-12 bg-blue-50 border border-blue-200
@@ -283,286 +281,319 @@
                   <p class="text-base font-semibold text-gray-500 mt-[-4px]">6</p>
                 </div>
               </div>
-              <!-- Itinerary - Details -->
-              <div
-                class="bg-blue-200 h-full overflow-y-auto relative z-0 py-4 flex flex-col space-y-8"
-              >
+              <!-- Itinerary Details -->
+              <div class="relative flex flex-col bg-white z-0 overflow-y-auto min-h-0">
                 <!-- Itinerary Line -->
-                <div class="absolute top-4 bottom-4 z-[-1] ml-[19px] w-[1px] bg-outline"></div>
-                <!-- Day 1 -->
-                <div class="">
-                  <!-- Day - Header -->
-                  <div class="bg-gray-100 pt-1 pb-[6px] px-4 rounded-lg border border-gray-100">
-                    <h4 class="font-semibold">Day 1</h4>
-                    <p class="text-text-second">Thu, 3 May</p>
+                <div class="absolute inset-y-4 w-[32px] border-r-2 border-r-outline -z-[1]"></div>
+                <!-- Scrollable Content -->
+                <div class="overflow-y-auto pb-4 space-y-8 min-h-0">
+                  <!-- Day 1 -->
+                  <div class="relative">
+                    <!-- Day - Header -->
+                    <div
+                      class="bg-gray-50 pt-1 pb-[6px] px-4 rounded-lg border border-gray-100 sticky top-0"
+                    >
+                      <h4 class="font-semibold">Day 1</h4>
+                      <p class="text-text-second">Thu, 3 May</p>
+                    </div>
+                    <!-- Day Details -->
+                    <!-- Place List -->
+                    <div class="flex flex-col mt-4 gap-7 px-3">
+                      <!-- Place 1 -->
+                      <div class="flex items-center gap-3">
+                        <!-- Place Type Icon -->
+                        <div
+                          class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
+                        >
+                          <img
+                            src="./public/assets/icons/place-type__lodging.svg"
+                            alt=""
+                            class=""
+                          />
+                        </div>
+                        <!-- Place Card Info -->
+                        <div
+                          class="flex w-full items-center pl-4 pr-1 py-3 bg-white border border-outline rounded-lg gap-4
+                            cursor-pointer hover:bg-gray-50"
+                        >
+                          <!-- Order -->
+                          <p
+                            class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
+                              text-center"
+                          >
+                            1
+                          </p>
+                          <!-- Thumb -->
+                          <div class="w-11 h-11 rounded-lg overflow-hidden">
+                            <img
+                              src="./public/assets/img/place__nippon-seinenkan-hotel.png"
+                              alt=""
+                              class=""
+                            />
+                          </div>
+                          <!-- Content -->
+                          <div class="flex-grow min-w-0">
+                            <!-- Place Title -->
+                            <h4 class="">Nippon Seinenkan Hotel</h4>
+                            <!-- Place Address -->
+                            <p class="text-text-second truncate">
+                              4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
+                            </p>
+                          </div>
+                          <button class="btn btn-tertiary">
+                            <img src="./public/assets/icons/chevron-right.svg" alt="" class="" />
+                          </button>
+                        </div>
+                      </div>
+                      <!-- Place 2 -->
+                      <div class="flex items-center gap-3">
+                        <!-- Place Type Icon -->
+                        <div
+                          class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
+                        >
+                          <img
+                            src="./public/assets/icons/place-type__lodging.svg"
+                            alt=""
+                            class=""
+                          />
+                        </div>
+                        <!-- Place Card Info -->
+                        <div
+                          class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
+                        >
+                          <!-- Order -->
+                          <p
+                            class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
+                              text-center"
+                          >
+                            1
+                          </p>
+                          <!-- Thumb -->
+                          <div class="w-11 h-11 rounded-lg overflow-hidden">
+                            <img
+                              src="./public/assets/img/place__nippon-seinenkan-hotel.png"
+                              alt=""
+                              class=""
+                            />
+                          </div>
+                          <!-- Content -->
+                          <div class="flex-grow min-w-0">
+                            <!-- Place Title -->
+                            <h4 class="">Nippon Seinenkan Hotel</h4>
+                            <!-- Place Address -->
+                            <p class="text-text-second truncate">
+                              4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
+                            </p>
+                          </div>
+                          <button class="btn btn-tertiary">
+                            <img src="./public/assets/icons/chevron-right.svg" alt="" class="" />
+                          </button>
+                        </div>
+                      </div>
+                      <!-- Place 3 -->
+                      <div class="flex items-center gap-3">
+                        <!-- Place Type Icon -->
+                        <div
+                          class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
+                        >
+                          <img
+                            src="./public/assets/icons/place-type__lodging.svg"
+                            alt=""
+                            class=""
+                          />
+                        </div>
+                        <!-- Place Card Info -->
+                        <div
+                          class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
+                        >
+                          <!-- Order -->
+                          <p
+                            class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
+                              text-center"
+                          >
+                            1
+                          </p>
+                          <!-- Thumb -->
+                          <div class="w-11 h-11 rounded-lg overflow-hidden">
+                            <img
+                              src="./public/assets/img/place__nippon-seinenkan-hotel.png"
+                              alt=""
+                              class=""
+                            />
+                          </div>
+                          <!-- Content -->
+                          <div class="flex-grow min-w-0">
+                            <!-- Place Title -->
+                            <h4 class="">Nippon Seinenkan Hotel</h4>
+                            <!-- Place Address -->
+                            <p class="text-text-second truncate">
+                              4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
+                            </p>
+                          </div>
+                          <button class="btn btn-tertiary">
+                            <img src="./public/assets/icons/chevron-right.svg" alt="" class="" />
+                          </button>
+                        </div>
+                      </div>
+                      <!-- Place 4 -->
+                      <div class="flex items-center gap-3">
+                        <!-- Place Type Icon -->
+                        <div
+                          class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
+                        >
+                          <img
+                            src="./public/assets/icons/place-type__lodging.svg"
+                            alt=""
+                            class=""
+                          />
+                        </div>
+                        <!-- Place Card Info -->
+                        <div
+                          class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
+                        >
+                          <!-- Order -->
+                          <p
+                            class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
+                              text-center"
+                          >
+                            1
+                          </p>
+                          <!-- Thumb -->
+                          <div class="w-11 h-11 rounded-lg overflow-hidden">
+                            <img
+                              src="./public/assets/img/place__nippon-seinenkan-hotel.png"
+                              alt=""
+                              class=""
+                            />
+                          </div>
+                          <!-- Content -->
+                          <div class="flex-grow min-w-0">
+                            <!-- Place Title -->
+                            <h4 class="">Nippon Seinenkan Hotel</h4>
+                            <!-- Place Address -->
+                            <p class="text-text-second truncate">
+                              4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
+                            </p>
+                          </div>
+                          <button class="btn btn-tertiary">
+                            <img src="./public/assets/icons/chevron-right.svg" alt="" class="" />
+                          </button>
+                        </div>
+                      </div>
+                      <!-- Place 5 -->
+                      <div class="flex items-center gap-3">
+                        <!-- Place Type Icon -->
+                        <div
+                          class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
+                        >
+                          <img
+                            src="./public/assets/icons/place-type__lodging.svg"
+                            alt=""
+                            class=""
+                          />
+                        </div>
+                        <!-- Place Card Info -->
+                        <div
+                          class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
+                        >
+                          <!-- Order -->
+                          <p
+                            class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
+                              text-center"
+                          >
+                            1
+                          </p>
+                          <!-- Thumb -->
+                          <div class="w-11 h-11 rounded-lg overflow-hidden">
+                            <img
+                              src="./public/assets/img/place__nippon-seinenkan-hotel.png"
+                              alt=""
+                              class=""
+                            />
+                          </div>
+                          <!-- Content -->
+                          <div class="flex-grow min-w-0">
+                            <!-- Place Title -->
+                            <h4 class="">Nippon Seinenkan Hotel</h4>
+                            <!-- Place Address -->
+                            <p class="text-text-second truncate">
+                              4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
+                            </p>
+                          </div>
+                          <button class="btn btn-tertiary">
+                            <img src="./public/assets/icons/chevron-right.svg" alt="" class="" />
+                          </button>
+                        </div>
+                      </div>
+                      <!-- Place 6 -->
+                      <div class="flex items-center gap-3">
+                        <!-- Place Type Icon -->
+                        <div
+                          class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
+                        >
+                          <img
+                            src="./public/assets/icons/place-type__lodging.svg"
+                            alt=""
+                            class=""
+                          />
+                        </div>
+                        <!-- Place Card Info -->
+                        <div
+                          class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
+                        >
+                          <!-- Order -->
+                          <p
+                            class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
+                              text-center"
+                          >
+                            1
+                          </p>
+                          <!-- Thumb -->
+                          <div class="w-11 h-11 rounded-lg overflow-hidden">
+                            <img
+                              src="./public/assets/img/place__nippon-seinenkan-hotel.png"
+                              alt=""
+                              class=""
+                            />
+                          </div>
+                          <!-- Content -->
+                          <div class="flex-grow min-w-0">
+                            <!-- Place Title -->
+                            <h4 class="">Nippon Seinenkan Hotel</h4>
+                            <!-- Place Address -->
+                            <p class="text-text-second truncate">
+                              4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
+                            </p>
+                          </div>
+                          <button class="btn btn-tertiary">
+                            <img src="./public/assets/icons/chevron-right.svg" alt="" class="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="btn ml-2 mt-4">
+                      <img src="./public/assets/icons/plus.svg" alt="" class="" />
+                      Add Place
+                    </button>
                   </div>
-                  <!-- Day Details -->
-                  <!-- Place List -->
-                  <div class="flex flex-col mt-4 gap-7">
-                    <!-- Place 1 -->
-                    <div class="flex items-center gap-3">
-                      <!-- Place Type Icon -->
-                      <div
-                        class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
-                      >
-                        <img src="./public/assets/icons/place-type__lodging.svg" alt="" class="" />
-                      </div>
-                      <!-- Place Card Info -->
-                      <div
-                        class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
-                      >
-                        <!-- Order -->
-                        <p
-                          class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
-                            text-center"
-                        >
-                          1
-                        </p>
-                        <!-- Thumb -->
-                        <div class="w-11 h-11 rounded-lg overflow-hidden">
-                          <img
-                            src="./public/assets/img/place__nippon-seinenkan-hotel.png"
-                            alt=""
-                            class=""
-                          />
-                        </div>
-                        <!-- Content -->
-                        <div class="flex-grow min-w-0">
-                          <!-- Place Title -->
-                          <h4 class="">Nippon Seinenkan Hotel</h4>
-                          <!-- Place Address -->
-                          <p class="text-text-second truncate">
-                            4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
-                          </p>
-                        </div>
-                        <button class="btn btn-tertiary">
-                          <img src="./public/assets/icons/chevron-right.svg" alt="" class="" />
-                        </button>
-                      </div>
+                  <!-- Day 2 -->
+                  <div class="relative">
+                    <!-- Day - Header -->
+                    <div
+                      class="bg-gray-100 pt-1 pb-[6px] px-4 rounded-lg border border-gray-100 sticky top-0"
+                    >
+                      <h4 class="font-semibold">Day 2</h4>
+                      <p class="text-text-second">Fri, 4 May</p>
                     </div>
-                    <!-- Place 2 -->
-                    <div class="flex items-center gap-3">
-                      <!-- Place Type Icon -->
-                      <div
-                        class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
-                      >
-                        <img src="./public/assets/icons/place-type__lodging.svg" alt="" class="" />
-                      </div>
-                      <!-- Place Card Info -->
-                      <div
-                        class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
-                      >
-                        <!-- Order -->
-                        <p
-                          class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
-                            text-center"
-                        >
-                          1
-                        </p>
-                        <!-- Thumb -->
-                        <div class="w-11 h-11 rounded-lg overflow-hidden">
-                          <img
-                            src="./public/assets/img/place__nippon-seinenkan-hotel.png"
-                            alt=""
-                            class=""
-                          />
-                        </div>
-                        <!-- Content -->
-                        <div class="flex-grow min-w-0">
-                          <!-- Place Title -->
-                          <h4 class="">Nippon Seinenkan Hotel</h4>
-                          <!-- Place Address -->
-                          <p class="text-text-second truncate">
-                            4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
-                          </p>
-                        </div>
-                        <button class="btn btn-tertiary">
-                          <img src="./public/assets/icons/chevron-right.svg" alt="" class="" />
-                        </button>
-                      </div>
-                    </div>
-                    <!-- Place 3 -->
-                    <div class="flex items-center gap-3">
-                      <!-- Place Type Icon -->
-                      <div
-                        class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
-                      >
-                        <img src="./public/assets/icons/place-type__lodging.svg" alt="" class="" />
-                      </div>
-                      <!-- Place Card Info -->
-                      <div
-                        class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
-                      >
-                        <!-- Order -->
-                        <p
-                          class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
-                            text-center"
-                        >
-                          1
-                        </p>
-                        <!-- Thumb -->
-                        <div class="w-11 h-11 rounded-lg overflow-hidden">
-                          <img
-                            src="./public/assets/img/place__nippon-seinenkan-hotel.png"
-                            alt=""
-                            class=""
-                          />
-                        </div>
-                        <!-- Content -->
-                        <div class="flex-grow min-w-0">
-                          <!-- Place Title -->
-                          <h4 class="">Nippon Seinenkan Hotel</h4>
-                          <!-- Place Address -->
-                          <p class="text-text-second truncate">
-                            4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
-                          </p>
-                        </div>
-                        <button class="btn btn-tertiary">
-                          <img src="./public/assets/icons/chevron-right.svg" alt="" class="" />
-                        </button>
-                      </div>
-                    </div>
-                    <!-- Place 4 -->
-                    <div class="flex items-center gap-3">
-                      <!-- Place Type Icon -->
-                      <div
-                        class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
-                      >
-                        <img src="./public/assets/icons/place-type__lodging.svg" alt="" class="" />
-                      </div>
-                      <!-- Place Card Info -->
-                      <div
-                        class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
-                      >
-                        <!-- Order -->
-                        <p
-                          class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
-                            text-center"
-                        >
-                          1
-                        </p>
-                        <!-- Thumb -->
-                        <div class="w-11 h-11 rounded-lg overflow-hidden">
-                          <img
-                            src="./public/assets/img/place__nippon-seinenkan-hotel.png"
-                            alt=""
-                            class=""
-                          />
-                        </div>
-                        <!-- Content -->
-                        <div class="flex-grow min-w-0">
-                          <!-- Place Title -->
-                          <h4 class="">Nippon Seinenkan Hotel</h4>
-                          <!-- Place Address -->
-                          <p class="text-text-second truncate">
-                            4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
-                          </p>
-                        </div>
-                        <button class="btn btn-tertiary">
-                          <img src="./public/assets/icons/chevron-right.svg" alt="" class="" />
-                        </button>
-                      </div>
-                    </div>
-                    <!-- Place 5 -->
-                    <div class="flex items-center gap-3">
-                      <!-- Place Type Icon -->
-                      <div
-                        class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
-                      >
-                        <img src="./public/assets/icons/place-type__lodging.svg" alt="" class="" />
-                      </div>
-                      <!-- Place Card Info -->
-                      <div
-                        class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
-                      >
-                        <!-- Order -->
-                        <p
-                          class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
-                            text-center"
-                        >
-                          1
-                        </p>
-                        <!-- Thumb -->
-                        <div class="w-11 h-11 rounded-lg overflow-hidden">
-                          <img
-                            src="./public/assets/img/place__nippon-seinenkan-hotel.png"
-                            alt=""
-                            class=""
-                          />
-                        </div>
-                        <!-- Content -->
-                        <div class="flex-grow min-w-0">
-                          <!-- Place Title -->
-                          <h4 class="">Nippon Seinenkan Hotel</h4>
-                          <!-- Place Address -->
-                          <p class="text-text-second truncate">
-                            4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
-                          </p>
-                        </div>
-                        <button class="btn btn-tertiary">
-                          <img src="./public/assets/icons/chevron-right.svg" alt="" class="" />
-                        </button>
-                      </div>
-                    </div>
-                    <!-- Place 6 -->
-                    <div class="flex items-center gap-3">
-                      <!-- Place Type Icon -->
-                      <div
-                        class="flex w-10 h-10 rounded-full items-center justify-center p-2.5 bg-purple-200"
-                      >
-                        <img src="./public/assets/icons/place-type__lodging.svg" alt="" class="" />
-                      </div>
-                      <!-- Place Card Info -->
-                      <div
-                        class="flex w-full items-center pl-4 pr-3 py-3 bg-white border border-outline rounded-lg gap-4"
-                      >
-                        <!-- Order -->
-                        <p
-                          class="flex items-center justify-center w-6 h-6 bg-gray-900 font-semibold text-white rounded-full
-                            text-center"
-                        >
-                          1
-                        </p>
-                        <!-- Thumb -->
-                        <div class="w-11 h-11 rounded-lg overflow-hidden">
-                          <img
-                            src="./public/assets/img/place__nippon-seinenkan-hotel.png"
-                            alt=""
-                            class=""
-                          />
-                        </div>
-                        <!-- Content -->
-                        <div class="flex-grow min-w-0">
-                          <!-- Place Title -->
-                          <h4 class="">Nippon Seinenkan Hotel</h4>
-                          <!-- Place Address -->
-                          <p class="text-text-second truncate">
-                            4-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan
-                          </p>
-                        </div>
-                        <button class="btn btn-tertiary">
-                          <img src="./public/assets/icons/chevron-right.svg" alt="" class="" />
-                        </button>
-                      </div>
-                    </div>
+                    <!-- Day- Details -->
+                    <div class="px-2"></div>
+
+                    <button class="ml-2 btn mt-4">
+                      <img src="./public/assets/icons/plus.svg" alt="" class="" />
+                      Add Place
+                    </button>
                   </div>
-                  <button class="btn mt-4">
-                    <img src="./public/assets/icons/plus.svg" alt="" class="" />
-                    Add Place
-                  </button>
-                </div>
-                <!-- Day 2 -->
-                <div class="">
-                  <!-- Day - Header -->
-                  <div class="bg-gray-100 pt-1 pb-[6px] px-4 rounded-lg border border-gray-100">
-                    <h4 class="font-semibold">Day 2</h4>
-                    <p class="text-text-second">Fri, 4 May</p>
-                  </div>
-                  <!-- Day- Details -->
-                  <button class="btn mt-4">
-                    <img src="./public/assets/icons/plus.svg" alt="" class="" />
-                    Add Place
-                  </button>
                 </div>
               </div>
             </div>
